@@ -1,0 +1,31 @@
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyyMMdd HH:mm:ss.SSS} [%thread] %-3level %logger{5} - %msg %n</pattern>
+    </encoder>
+  </appender>
+  <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>mylog.txt</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <!-- 하루 동안의 log를 남김 -->
+      <fileNamePattern>mylog-%d{yyyy-MM-dd}.%i.zip</fileNamePattern>
+      <!-- 각각의 파일은 100MB로 저장되고, 30일동안, 최대 3GB의 log를 저장함-->
+       <maxFileSize>100MB</maxFileSize>  
+       <maxHistory>30</maxHistory>
+       <totalSizeCap>3GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%msg%n</pattern>
+    </encoder>
+  </appender>
+  <logger name="jdbc" level="OFF"/>
+  <logger name="jdbc.sqlonly" level="DEBUG"/>
+  <logger name="jdbc.sqltiming" level="OFF"/>
+  <logger name="jdbc.audit" level="OFF"/>
+  <logger name="jdbc.resultset" level="OFF"/>
+  <logger name="jdbc.resultsettable" level="OFF"/>
+  <logger name="jdbc.connection" level="OFF"/>
+  <root level="INFO">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>

@@ -1,0 +1,1 @@
+import{d as a,c as i,m as c}from"./index-TKqqy4Fs.js";const e=i();let n=c("");const u=a("login",()=>{async function t(o){return n.get("/crmHosinfo",{query:{hosnum:o},headers:{token:e.token}})}async function r(o,s){return n.get("/crmLogin",{query:{xur_id:o,xur_pass:s},headers:{token:e.token}})}return{getHospital:t,getLogin:r}});export{u as l};

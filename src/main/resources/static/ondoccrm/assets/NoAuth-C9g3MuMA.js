@@ -1,0 +1,1 @@
+import{_ as o,a as t,g as a,b as e}from"./index-TKqqy4Fs.js";const n={},r={class:"no-auth-wrap"};function c(_,s){return a(),t("div",r,s[0]||(s[0]=[e("div",{class:"message"},[e("strong",null,"해당 메뉴의 접근권한이 없습니다.")],-1)]))}const f=o(n,[["render",c],["__scopeId","data-v-f29637fd"]]);export{f as N};

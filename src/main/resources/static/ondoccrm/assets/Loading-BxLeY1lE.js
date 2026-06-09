@@ -1,0 +1,1 @@
+import{_ as a,a as s,g as n,b as e}from"./index-TKqqy4Fs.js";const t={},r={class:"loading-wrap"};function c(i,o){return n(),s("div",r,o[0]||(o[0]=[e("div",null,[e("img",{src:"https://on-doc.kr/mobile/image/loading.gif",alt:"Loading 이미지"})],-1)]))}const _=a(t,[["render",c],["__scopeId","data-v-9580ef60"]]);export{_ as L};

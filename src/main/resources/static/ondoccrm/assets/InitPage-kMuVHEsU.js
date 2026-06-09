@@ -1,0 +1,1 @@
+import{c as r,o as n,u as s}from"./index-TKqqy4Fs.js";import{u}from"./usrmngr-Bi7lubir.js";const l={__name:"InitPage",setup(m){const e=s(),o=r(),t=u();return n(()=>{o.loginCheck&&t.getAuthMenuList(o.memberId)}),o.loginCheck?e.push("/operationSchedule"):e.push("/login"),(c,a)=>null}};export{l as default};
