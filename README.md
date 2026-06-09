@@ -1,4 +1,4 @@
-springboot, sybase 사용
+springboot(java), sybase 사용
 
 실무에 적용 중인 GitHub 레포지토리가 Private 상태라 전체 코드를 보여드리긴 어려워요. 
 대신 보안이 필요한 중요 정보들은 'XXXX'로 가린 뒤, 소스코드 공개합니다.
